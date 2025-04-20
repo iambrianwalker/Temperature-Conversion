@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/website/temperature.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <label for="temperature">Enter temperature:</label>
+        <input type="number" id="temperature" name="temperature">
+
+        <label for="type">Select input temperature type:</label>
+        <select id="type" name="type">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+
+        <label for="convert">Convert to:</label>
+        <select id="convert" name="convert">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+
+        <button id="convertButton">Convert</button>
+
+        <p id="result"></p>
+        <!-- New section for displaying the random weather fact -->
+        <p id="weatherFact"></p>
+    </div>
+
+    <div class="darkModeToggle">Dark Mode</div>
+
+    <script src="/website/temperature.js"></script>
+</body>
+</html>
