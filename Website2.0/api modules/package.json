@@ -1,0 +1,16 @@
+{
+  "name": "14047",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Brian Walker, Nadia Thorton",
+  "license": "ISC",
+  "description": "Temperature Converter API Setup",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

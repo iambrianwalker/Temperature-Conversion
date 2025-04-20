@@ -1,0 +1,152 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page setup */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color, #333); /* Default light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--bg-color, #f0f0f0); /* Default light background */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container styling */
+.container {
+    background-color: var(--container-bg, #fff); /* Default light container background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header styling */
+h1 {
+    font-size: 28px;
+    color: var(--header-color, #4caf50); /* Default header color */
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--label-color, #555); /* Default label color */
+    display: block;
+}
+
+/* Input and select styling */
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--input-border, #ddd); /* Default border color */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--input-bg, #fff); /* Default input background */
+    color: var(--text-color, #333); /* Default text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focus effect for inputs and selects */
+input[type="number"]:focus, select:focus {
+    border-color: var(--focus-border, #4caf50); /* Default focus border */
+}
+
+/* Button styling */
+button {
+    background-color: var(--button-bg, #4caf50); /* Default button background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: var(--button-hover, #45a049); /* Default button hover */
+    transform: translateY(-2px);
+}
+
+/* Result styling */
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--result-color, #333); /* Default result text color */
+    padding: 10px;
+    background-color: var(--result-bg, #fff); /* Default result background */
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Dark Mode */
+.darkVariables {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #1e1e1e;
+    --header-color: #80e27e;
+    --label-color: #ccc;
+    --input-bg: #333;
+    --input-border: #444;
+    --focus-border: #80e27e;
+    --button-bg: #79da77be;
+    --button-hover: #66c466c2;
+    --result-bg: #1e1e1e;
+    --result-color: #e0e0e0;
+}
+
+/* Dark Mode Toggle Button */
+.darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--button-bg, #4caf50);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for dark mode toggle */
+.darkModeToggle:hover {
+    background-color: var(--button-hover, #45a049);
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    input[type="number"], select {
+        font-size: 14px;
+    }
+}
