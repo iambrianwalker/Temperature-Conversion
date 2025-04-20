@@ -16,16 +16,16 @@ The **Temperature Converter** is a web application and API that allows users to 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/temperature-converter.git
+   https://github.com/iambrianwalker/Temperature-Conversion.git
    ```
 2. Navigate to the project folder and install dependencies:
    ```bash
-   cd temperature-converter
+   cd Temperature-Conversion
    npm install
    ```
 
 3. Ensure the following files are present:
-   - **Client-side files**: `index.html`, `temperature.css`, `temperature.js`
+   - **Client-side files**: `temperature.html`, `temperature.css`, `temperature.js`
    - **Server-side files**: `server.js`, `package.json`
    - **Weather facts file**: `weatherFacts/weatherFacts.txt`
 
@@ -35,7 +35,7 @@ The **Temperature Converter** is a web application and API that allows users to 
    ```
    This will start the server on `http://localhost:4000`.
 
-5. Open `index.html` in your web browser to use the application.
+5. Open `temperature.html` in your web browser to use the application.
 
 ## API Details
 ### `/convert`
