@@ -75,7 +75,7 @@ This project encapsulates temperature conversion logic directly within the progr
 - **Result**: `37.78°C`
 
 ## License
-This project is licensed under the **ISC License** (or another license of your choice).
+This project is licensed under the **ISC License** 
 
 ## Author
 Created by **Brian Walker and Nadia Thorton**.
